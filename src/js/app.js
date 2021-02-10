@@ -2,13 +2,13 @@
 export default function checkHealth(param) {
   let healthyType;
   if (param.health > 50) {
-    healthyType = 'Green';
+    healthyType = 'healthy';
     return healthyType;
   } if (param.health >= 15 && param.health <= 50) {
-    healthyType = 'Yellow';
+    healthyType = 'wounded';
     return healthyType;
   } if (param.health < 15 && param.health >= 0) {
-    healthyType = 'Red';
+    healthyType = 'critical';
     return healthyType;
   }
   return 0;
